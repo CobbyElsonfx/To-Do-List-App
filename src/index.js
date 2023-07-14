@@ -24,7 +24,7 @@ const activitiesArray = [
 const list = document.querySelector('#list');
 
 function displayList() {
-  const sortedArr = activitiesArray.sort((a , b)=> a.index - b.index)
+  const sortedArr = activitiesArray.sort((a, b) => a.index - b.index);
   sortedArr.forEach((item) => {
     const eachActivity = document.createElement('li');
 
