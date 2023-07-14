@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>To Do List</title>
 </head>
+
 <body>
-    <h1>Hello webpack!</h1>
+    <section id="listContainer">
+        <div class="header">
+            <h1> To Do  List</h1>
+            <img src="./images/update.png" alt="Refresh" class="icons UpdateBtn">
+        </div>
+        <div class="addList">
+            <input type="text" placeholder="Add to your list..." class="addText">
+            <img src="./images/downIcon.png" alt="Add" class="icons addBtn">
+        </div>
+        <ul id="list">
+        </ul>
+        <button type="button" id="clearBtn" class="icons">Clear all completed</button>
+    </section>
 </body>
+
 </html>
