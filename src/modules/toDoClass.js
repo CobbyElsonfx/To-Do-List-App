@@ -1,3 +1,7 @@
+import ActivityState from './activityState.js';
+
+const activityState = new ActivityState();
+
 export default class ToDoClass {
   constructor() {
     this.listArray = JSON.parse(localStorage.getItem('taskStorage')) || [];
@@ -16,15 +20,18 @@ export default class ToDoClass {
             const checker = document.createElement('input');
             checker.type = 'checkbox';
             checker.className = 'checker';
+            checker.checked = Item.completed;
+            checker.addEventListener('change', () => {
+              activityState.changeActivity(this.listArray, index);
+            });
             activityDetail.appendChild(checker);
 
             const ItemDescription = document.createElement('input');
             ItemDescription.type = 'text';
             ItemDescription.className = 'itemDescription';
             ItemDescription.value = `${Item.description}`;
-            // To Update edited value initiated using enter key
-            ItemDescription.addEventListener('keypress', (e) => {
-              if (e.key === 'Enter' && ItemDescription.value) {
+            ItemDescription.addEventListener('keypress', (event) => {
+              if (event.key === 'Enter' && ItemDescription.value) {
                 this.updateActivity(ItemDescription.value, (index));
               }
             });
