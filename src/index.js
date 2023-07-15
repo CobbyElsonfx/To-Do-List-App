@@ -3,14 +3,16 @@ import './assets/update.png';
 import './assets/downIcon.png';
 import './assets/dots.png';
 import './assets/delete.png';
-
+import ActivityState from './modules/activityState.js';
 import ToDoClass from './modules/toDoClass.js';
 
+const activityState = new ActivityState();
 const listOfActivities = new ToDoClass();
 
 const updateListBtn = document.querySelector('.updateListBtn');
 const addButton = document.querySelector('.addButton');
 const inputText = document.querySelector('.inputText');
+const clearBtn = document.querySelector('#clearBtn');
 
 updateListBtn.onclick = () => {
   document.location.reload();
@@ -27,6 +29,10 @@ inputText.addEventListener('keypress', (event) => {
     inputText.value = '';
   }
 });
+
+clearBtn.onclick = () => {
+  activityState.clearAllItems(listOfActivities.listArray);
+};
 
 window.onload = () => {
   listOfActivities.displayList();
