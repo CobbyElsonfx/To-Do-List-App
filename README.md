@@ -133,7 +133,7 @@ If you like this project and wish to collaborate. Please contact me.
 
 - **Is it responsive?**
 
-  - Yes, works both on mobile and desktop.
+  - Yes,it works both on mobile and desktop screens.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -2,44 +2,32 @@ import './style.css';
 import './assets/update.png';
 import './assets/downIcon.png';
 import './assets/dots.png';
+import './assets/delete.png';
 
-const activitiesArray = [
-  {
-    description: 'Dinner',
-    completed: true,
-    index: 0,
-  },
-  {
-    description: 'Story Book Reading',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Go to bed',
-    completed: false,
-    index: 2,
-  },
-];
+import ToDoClass from './modules/toDoClass.js';
 
-const list = document.querySelector('#list');
+const listOfActivities = new ToDoClass();
 
-function displayList() {
-  const sortedArr = activitiesArray.sort((a, b) => a.index - b.index);
-  sortedArr.forEach((item) => {
-    const eachActivity = document.createElement('li');
+const updateListBtn = document.querySelector('.updateListBtn');
+const addButton = document.querySelector('.addButton');
+const inputText = document.querySelector('.inputText');
 
-    eachActivity.className = 'activity';
-    eachActivity.innerHTML = `
-        <div class="activityDetail">
-                    <input type="checkbox" id="${item.index}" class="checker">
-                    <label for="${item.index}">${item.description}</label>
-                </div>
-                <img src="./images/dots.png" alt="Option" class="icons optionBtn">
-        `;
-    list.appendChild(eachActivity);
-  });
-}
+updateListBtn.onclick = () => {
+  document.location.reload();
+};
+
+addButton.onclick = () => {
+  listOfActivities.addActivity(inputText.value);
+  inputText.value = '';
+};
+
+inputText.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter' && inputText.value) {
+    listOfActivities.addActivity(inputText.value);
+    inputText.value = '';
+  }
+});
 
 window.onload = () => {
-  displayList();
+  listOfActivities.displayList();
 };
