@@ -1,5 +1,5 @@
 export default class ActivityState {
-    // Storing checked activities
+    // Storing checked activit]ies
     changeActivity = (array, index) => {
       array[index].completed = !array[index].completed;
       localStorage.setItem('taskStorage', JSON.stringify(array));
