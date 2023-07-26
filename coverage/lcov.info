@@ -1,117 +1,117 @@
-tn:
-  sf:src\modules\activitystate.js
-  fn:3,(anonymous_0)
-  fn:9,(anonymous_1)
-  fn:10,(anonymous_2)
-  fn:11,(anonymous_3)
-  fnf:4
-  fnh:0
-  fnda:0,(anonymous_0)
-  fnda:0,(anonymous_1)
-  fnda:0,(anonymous_2)
-  fnda:0,(anonymous_3)
-  da:3,1
-  da:4,0
-  da:5,0
-  da:9,1
-  da:10,0
-  da:11,0
-  da:12,0
-  da:14,0
-  da:15,0
-  lf:9
-  lh:2
-  brf:0
-  brh:0
-  end_of_record
-  tn:
-  sf:src\modules\todoclass.js
-  fn:6,(anonymous_0)
-  fn:10,(anonymous_1)
-  fn:13,(anonymous_2)
-  fn:24,(anonymous_3)
-  fn:33,(anonymous_4)
-  fn:45,(anonymous_5)
-  fn:53,(anonymous_6)
-  fn:63,(anonymous_7)
-  fn:69,(anonymous_8)
-  fn:70,(anonymous_9)
-  fn:71,(anonymous_10)
-  fnf:11
-  fnh:7
-  fnda:2,(anonymous_0)
-  fnda:4,(anonymous_1)
-  fnda:5,(anonymous_2)
-  fnda:0,(anonymous_3)
-  fnda:0,(anonymous_4)
-  fnda:0,(anonymous_5)
-  fnda:3,(anonymous_6)
-  fnda:0,(anonymous_7)
-  fnda:1,(anonymous_8)
-  fnda:2,(anonymous_9)
-  fnda:1,(anonymous_10)
-  da:3,1
-  da:7,2
-  da:10,2
-  da:11,4
-  da:12,4
-  da:13,4
-  da:14,5
-  da:15,5
-  da:17,5
-  da:18,5
-  da:20,5
-  da:21,5
-  da:22,5
-  da:23,5
-  da:24,5
-  da:25,0
-  da:27,5
-  da:29,5
-  da:30,5
-  da:31,5
-  da:32,5
-  da:33,5
-  da:34,0
-  da:35,0
-  da:38,5
-  da:39,5
-  da:41,5
-  da:42,5
-  da:43,5
-  da:44,5
-  da:45,5
-  da:46,0
-  da:48,5
-  da:49,5
-  da:53,2
-  da:54,3
-  da:55,3
-  da:56,3
-  da:57,3
-  da:58,3
-  da:59,3
-  da:60,3
-  da:63,2
-  da:64,0
-  da:65,0
-  da:66,0
-  da:69,2
-  da:70,2
-  da:71,1
-  da:72,1
-  da:74,1
-  da:75,1
-  lf:52
-  lh:45
-  brda:7,0,0,2
-  brda:7,0,1,2
-  brda:32,1,0,5
-  brda:32,1,1,0
-  brda:34,2,0,0
-  brda:34,2,1,0
-  brda:34,3,0,0
-  brda:34,3,1,0
-  brf:8
-  brh:3
-;
+TN:
+SF:src\modules\activityState.js
+FN:3,(anonymous_0)
+FN:9,(anonymous_1)
+FN:10,(anonymous_2)
+FN:11,(anonymous_3)
+FNF:4
+FNH:0
+FNDA:0,(anonymous_0)
+FNDA:0,(anonymous_1)
+FNDA:0,(anonymous_2)
+FNDA:0,(anonymous_3)
+DA:3,1
+DA:4,0
+DA:5,0
+DA:9,1
+DA:10,0
+DA:11,0
+DA:12,0
+DA:14,0
+DA:15,0
+LF:9
+LH:2
+BRF:0
+BRH:0
+end_of_record
+TN:
+SF:src\modules\toDoClass.js
+FN:6,(anonymous_0)
+FN:10,(anonymous_1)
+FN:13,(anonymous_2)
+FN:24,(anonymous_3)
+FN:33,(anonymous_4)
+FN:45,(anonymous_5)
+FN:53,(anonymous_6)
+FN:63,(anonymous_7)
+FN:69,(anonymous_8)
+FN:70,(anonymous_9)
+FN:71,(anonymous_10)
+FNF:11
+FNH:7
+FNDA:2,(anonymous_0)
+FNDA:4,(anonymous_1)
+FNDA:5,(anonymous_2)
+FNDA:0,(anonymous_3)
+FNDA:0,(anonymous_4)
+FNDA:0,(anonymous_5)
+FNDA:3,(anonymous_6)
+FNDA:0,(anonymous_7)
+FNDA:1,(anonymous_8)
+FNDA:2,(anonymous_9)
+FNDA:1,(anonymous_10)
+DA:3,1
+DA:7,2
+DA:10,2
+DA:11,4
+DA:12,4
+DA:13,4
+DA:14,5
+DA:15,5
+DA:17,5
+DA:18,5
+DA:20,5
+DA:21,5
+DA:22,5
+DA:23,5
+DA:24,5
+DA:25,0
+DA:27,5
+DA:29,5
+DA:30,5
+DA:31,5
+DA:32,5
+DA:33,5
+DA:34,0
+DA:35,0
+DA:38,5
+DA:39,5
+DA:41,5
+DA:42,5
+DA:43,5
+DA:44,5
+DA:45,5
+DA:46,0
+DA:48,5
+DA:49,5
+DA:53,2
+DA:54,3
+DA:55,3
+DA:56,3
+DA:57,3
+DA:58,3
+DA:59,3
+DA:60,3
+DA:63,2
+DA:64,0
+DA:65,0
+DA:66,0
+DA:69,2
+DA:70,2
+DA:71,1
+DA:72,1
+DA:74,1
+DA:75,1
+LF:52
+LH:45
+BRDA:7,0,0,2
+BRDA:7,0,1,2
+BRDA:32,1,0,5
+BRDA:32,1,1,0
+BRDA:34,2,0,0
+BRDA:34,2,1,0
+BRDA:34,3,0,0
+BRDA:34,3,1,0
+BRF:8
+BRH:3
+end_of_record

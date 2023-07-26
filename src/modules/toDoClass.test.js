@@ -6,8 +6,12 @@ const localStorageMock = (() => {
 
   return {
     getItem: (key) => store[key] || null,
-    setItem: (key, value) => (store[key] = value.toString()),
-    clear: () => (store = {}),
+    setItem: (key, value) => {
+      store[key] = value.toString();
+    },
+    clear: () => {
+      store = {};
+    },
   };
 })();
 
@@ -17,7 +21,7 @@ describe('ToDoClass', () => {
   let todo;
   let listElementMock;
 
-  beforeEach(() => { 
+  beforeEach(() => {
     localStorageMock.clear();
     todo = new ToDoClass();
     listElementMock = document.createElement('ul');
