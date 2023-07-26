@@ -1,4 +1,4 @@
-import ToDoClass from './toDoClass.js';
+import ToDoClass from '../toDoClass.js';
 
 // Function to mock localStorage
 const localStorageMock = (() => {
