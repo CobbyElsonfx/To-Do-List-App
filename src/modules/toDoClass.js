@@ -50,28 +50,28 @@ export default class ToDoClass {
     });
   }
 
-        addActivity = (value) => {
-          const arrayItem = {};
-          arrayItem.description = value;
-          arrayItem.completed = false;
-          arrayItem.index = (this.listArray.length + 1);
-          this.listArray.push(arrayItem);
-          localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
-          this.displayList();
-        }
+  addActivity = (value) => {
+    const arrayItem = {};
+    arrayItem.description = value;
+    arrayItem.completed = false;
+    arrayItem.index = (this.listArray.length + 1);
+    this.listArray.push(arrayItem);
+    localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
+    this.displayList();
+  }
+  
+  updateActivity = (value, index) => {
+    this.listArray[index].description = value;
+    localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
+    this.displayList();
+  }
 
-        updateActivity = (value, index) => {
-          this.listArray[index].description = value;
-          localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
-          this.displayList();
-        }
-
-      removeActivity = (value) => {
-        this.listArray = this.listArray.filter((Item) => Item.index !== value);
-        this.listArray.forEach((Item, index) => {
-          Item.index = (index + 1);
-        });
-        localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
-        this.displayList();
-      }
+  removeActivity = (value) => {
+    this.listArray = this.listArray.filter((Item) => Item.index !== value);
+    this.listArray.forEach((Item, index) => {
+      Item.index = (index + 1);
+    });
+    localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
+    this.displayList();
+  }
 }
