@@ -59,7 +59,7 @@ export default class ToDoClass {
     localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
     this.displayList();
   }
-  
+
   updateActivity = (value, index) => {
     this.listArray[index].description = value;
     localStorage.setItem('taskStorage', JSON.stringify(this.listArray));
