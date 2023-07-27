@@ -55,7 +55,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Link](https://cobbyelsonfx.github.io/To-Do-List-App/)
+- [Live Link](https://cobbyelsonfx.github.io/To-Do-List-App/dist)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
