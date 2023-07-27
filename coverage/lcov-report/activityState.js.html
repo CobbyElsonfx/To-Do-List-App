@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/10</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.22% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/9</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -78,38 +78,35 @@
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
 <a name='L15'></a><a href='#L15'>15</a>
-<a name='L16'></a><a href='#L16'>16</a>
-<a name='L17'></a><a href='#L17'>17</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L16'></a><a href='#L16'>16</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default class ActivityState {
     // Storing checked activit]ies
-    changeActivity = <span class="fstat-no" title="function not covered" >(a</span>rray, index) =&gt; {
-<span class="cstat-no" title="statement not covered" >      array[index].completed = !array[index].completed;</span>
-<span class="cstat-no" title="statement not covered" >      localStorage.setItem('taskStorage', JSON.stringify(array));</span>
+    changeActivity = (array, index) =&gt; {
+      array[index].completed = !array[index].completed;
+      localStorage.setItem('taskStorage', JSON.stringify(array));
     };
 &nbsp;
     // Function to remove all completed item
-    clearAllItems = <span class="fstat-no" title="function not covered" >(a</span>rray) =&gt; {
-<span class="cstat-no" title="statement not covered" >      array = array.filter(<span class="fstat-no" title="function not covered" >(o</span>bject) =&gt; <span class="cstat-no" title="statement not covered" >object.completed !== true)</span>;</span>
-<span class="cstat-no" title="statement not covered" >      array.forEach(<span class="fstat-no" title="function not covered" >(e</span>lement, index) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        element.index = (index + 1);</span>
+    clearAllItems = (array) =&gt; {
+      array = array.filter((object) =&gt; object.completed !== true);
+      array.forEach((element, index) =&gt; {
+        element.index = (index + 1);
       });
-<span class="cstat-no" title="statement not covered" >      localStorage.setItem('taskStorage', JSON.stringify(array));</span>
-<span class="cstat-no" title="statement not covered" >      document.location.reload();</span>
+      localStorage.setItem('taskStorage', JSON.stringify(array));
     };
 }</pre></td></tr></table></pre>
 
@@ -118,7 +115,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-07-26T10:18:39.036Z
+                at 2023-07-26T14:29:27.672Z
             </div>
         <script src="prettify.js"></script>
         <script>

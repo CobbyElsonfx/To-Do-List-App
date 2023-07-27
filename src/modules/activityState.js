@@ -12,6 +12,5 @@ export default class ActivityState {
         element.index = (index + 1);
       });
       localStorage.setItem('taskStorage', JSON.stringify(array));
-      document.location.reload();
     };
 }

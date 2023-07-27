@@ -101,6 +101,12 @@ You can deploy this project using:
 - GitHub: [@CobbyElsonfx](https://github.com/CobbyElsonfx)
 - LinkedIn: [@FrancisAndoh](https://www.linkedin.com/in/francis-andoh-133aa7245/)
 
+👤 **Pablo Thasi**
+
+- GitHub: [@thasipablo](https://github.com/thasipablo)
+- Twitter: [@thasipablo_](https://twitter.com/thasipablo_)
+- LinkedIn: [thasipablo](https://linkedin.com/in/thasipablo)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>

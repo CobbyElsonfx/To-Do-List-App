@@ -32,6 +32,7 @@ inputText.addEventListener('keypress', (event) => {
 
 clearBtn.onclick = () => {
   activityState.clearAllItems(listOfActivities.listArray);
+  document.location.reload();
 };
 
 window.onload = () => {
